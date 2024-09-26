@@ -1,1 +1,54 @@
 /* CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+/* Achtergrond kleur voor de body: wit */
+
+.logo {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+/* Logo krijgt een breedte van .. px. Met de cursor pointer verandert de pointer in een 'hand' als met de muis over de logo wordt gegaan */
+
+.ondertitel{
+    font-family: "Merriweather", system-ui;
+    text-transform: uppercase; 
+    text-align: center;
+    font-size: 12px;
+}
+
+nav{
+    text-align: center;
+    font-family: "Merriweather", system-ui;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+}
+/*Met list: style none krijg je geen puntjes op je lijst*/
+
+nav ul li a{
+    text-decoration: none;
+   }
+/* vraag: kan deze ook in een ander selector worden geplaatst? */
+
+article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
