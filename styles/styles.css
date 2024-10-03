@@ -19,8 +19,8 @@ body {
 }
 /* Logo krijgt een breedte van .. px. Met de cursor pointer verandert de pointer in een 'hand' als met de muis over de logo wordt gegaan */
 
-.ondertitel{
-    font-family: "Merriweather", system-ui;
+.undertitle{
+    font-family: "Tiempos Headline", serif;
     text-transform: uppercase; 
     text-align: center;
     font-size: 12px;

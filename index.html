@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redpers artikelpagina</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
 <body>
@@ -12,44 +15,51 @@
         <img src="assets/logo redpers.PNG" alt="logo Redpers" class="logo">
         <!-- Hoe kan ik hier naar homepage verwijzen als ik erop klik? -->
 
-        <p class="ondertitel">Podium voor de journalistiek</p>
+        <p class="undertitle">Podium voor de journalistiek</p>
 
+        <!-- Navigatiebar bovenaan -->
         <nav>
             <ul>
                 <li><a href="">Binnenland</a></li>
                 <li><a href="">Buitenland</a></li>
-                <li><a href="">Columns</a></li>
+                <li><a href="">Column's</a></li>
                 <li><a href="">Economie</a></li>
                 <li><a href="">Kunst & Media</a></li>
                 <li><a href="">Podcasts</a></li>
                 <li><a href="">Politiek</a></li>
                 <li><a href="">Wetenschap</a></li>
-
             </ul>
+
+            <!-- class voor de knoppen 'doneren en nieuwsbrief' rechtsboven -->
+        <div class="intro">
+
+            <a href="">Nieuwsbrief</a>
+            <button class="donate"> <img src="assets/doneren.PNG"></button>
+        </div>
         </nav>
     </header> 
 
     <main>
-        <section class="intro">
-
-            <a href="">Nieuwsbrief</a>
-            <button class="donate"> <img src="assets/doneren.PNG"></button>
-            
-            <article>
-                <div class="article-text">
+        
+        <!-- section  voor de foto, titel en ondertitel van het artikel -->
+        <section class="article-text">
                     <h1>Verbindend, fris en vol energie: een duik in de opkomst van maté</h1>
-                    <h4>Maté-frisdranken winnen aan populariteit in Nederland. Als alternatief voor gangbare energiedranken, is maté vooral gewild in creatieve en bewuste kringen. Waar komt deze groei vandaan? </h4>
+                    <h3>Maté-frisdranken winnen aan populariteit in Nederland. Als alternatief voor gangbare energiedranken, is maté vooral gewild in creatieve en bewuste kringen. Waar komt deze groei vandaan? </h4>
                 </div>
                 <img src="assets/new foto.PNG" alt="foto van colablik met sinasappels">
             </article>
         </section>
 
-        <section class="body-text">
-            <button class="artikel-beluisteren"> <img src="assets/artikel beluisteren.PNG"></button>
-            <button class="save"> <img src="assets/save button.PNG"></button>
-            <button class="share"> <img src="assets/share button.PNG"></button>
-            <button class="text-size"> <img src="assets/text size button.PNG"></button>
+        <div class="buttons">
+            <button class="artikel-beluisteren"> <img src="assets/artikel beluisteren.PNG" alt="artikel beluisteren"></button>
+            <button class="save"> <img src="assets/save button.PNG" alt="save button"></button>
+            <button class="share"> <img src="assets/share button.PNG" alt="share button"></button>
+            <button class="text-size"> <img src="assets/text size button.PNG" alt="text size button"></button>
+        </div>
 
+        <!-- section voor de paragrafen en kopjes -->
+
+        <section class="body-text">
             <p>Als je ooit in Berlijn bent geweest heb je het vast wel eens gezien: glazen flessen met een geel-blauw etiket, gevuld met een amberkleurig, koolzuurhoudend drankje. Deze energydrink, Club-Mate, werd in de jaren ’90 op de markt gebracht. Sindsdien is het onlosmakelijk verbonden met de Duitse hoofdstad, waar mensen het drinken aan biertafels voor Spätis (avondwinkels die op elke straathoek te vinden zijn), in parken en clubs. Met dank aan ravers en hackers, voor wie dag en nacht onopgemerkt in elkaar overvloeien, is Club-Mate verworden tot een waar cultureel fenomeen. Inmiddels is het drankje ook in onze hoofdstad bezig met een opmars: het wordt verkocht op de universiteit, in filmhuizen, clubs en verschillende supermarkten. En niet alleen Club-Mate, maar ook jongere maté-merken staan te popelen om de Nederlandse markt te veroveren. Red Pers sprak met twee van deze merken, Mojo Maté en El Tony Mate, over maté, hun drijfveren en de toekomst.</p>
             
             <h3>Een way of life</h3>
@@ -75,6 +85,7 @@
             <em>Eindredactie door Evi Verleije</em>
         </section>
 
+        <!-- section voor de informatie onderaan het artikel: doneren, informatie schrijver/illustrator-->
         <section>
             <h3>Steun Red Pers</h3>
             <p>Je las dit artikel gratis, maar dat betekent niet dat het Red Pers niets heeft gekost. Wij bieden jonge, aspirerende journalisten een podium én begeleiding. Dat kunnen we nog beter met jouw steun. Die steun komt met twee voor de prijs van één, want onze sponsor matcht jouw donatie. Geef jij ons vijf euro? Dan ontvangen wij een tientje.</p>
@@ -103,6 +114,8 @@
     </main>
 
     <footer>
+    
+        <!--Footer met navigatie naar andere pagina's & logo-->
         <img src="assets/logo redpers.PNG" alt="logo Redpers" class="logo">
 
         <ul>
