@@ -1,4 +1,3 @@
-/* CSS */
 *{
     margin: 0;
     padding: 0;
@@ -10,20 +9,65 @@ body {
 }
 /* Achtergrond kleur voor de body: wit */
 
-.logo {
+.first-nav{ 
+    background-color: black;
+    height: 40px;
+}
+/* bovenste navigatiebar met als achtergrondkleur zwart */
+
+.first-nav ul {
+    text-align: right;
+    margin-right: 30px;
+}
+/* Voor het centreren van de text in de nav bar naar rechts */
+
+.first-nav ul li a{
+    color:#fff;    
+}
+/* De kleur van de text in de navbar */
+/* vraag: ruimte boven de tekst werkt niet met margintop? */
+
+
+.logo-above {
     cursor: pointer;
     display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     width: 10%;
 }
-/* Logo krijgt een breedte van .. px. Met de cursor pointer verandert de pointer in een 'hand' als met de muis over de logo wordt gegaan */
+/* Logo krijgt een width van 10%. Met de cursor pointer verandert de pointer in een 'hand' als met de muis over de logo wordt gegaan */
 
 .undertitle{
-    font-family: "Tiempos Headline", serif;
+    font-family: 'inter' sans-serif;
     text-transform: uppercase; 
     text-align: center;
     font-size: 12px;
+    margin-bottom: 10px;
+}
+/* to do: aanpassen van de lettertype overeenkomstig figma */
+
+.newsletter{
+    float: right;
+    text-decoration: none;
+    margin-top: 45px;
+    margin-right: 15px;
+    color:black;
+}
+
+.donate{
+    float: right;
+    width: 91px;
+    height: 28px;
+    border: none;
+    margin-top: 3%;
+    margin-right: 20px;
+}
+ 
+.image-button{
+    width: 91px;
+    height: 24px;
 }
 
 nav{
@@ -44,6 +88,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
+    color: black;
    }
 /* vraag: kan deze ook in een ander selector worden geplaatst? */
 
@@ -51,4 +96,11 @@ article{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.text-image{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 3fr .5fr;
+
 }
