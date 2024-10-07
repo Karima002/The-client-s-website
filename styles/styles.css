@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     background-color: #fff;
 }
@@ -39,7 +41,7 @@ body {
     grid-row-end: 3;
     height: 3em;
     width: 10em;
-    margin-left: 1.5em;
+    margin-left: 2em;
     cursor: pointer;
 
 }
@@ -48,10 +50,10 @@ body {
 .undertitle {
     grid-row-start: 3;
     grid-row-end: 4;
-    font-family: 'inter' sans-serif;
+    font-family: "Inter", sans-serif;
     text-transform: uppercase; 
     font-size: 12px;
-    margin-left: 1em;
+    margin-left: 1.5em;
 }
 /* to do: aanpassen van de lettertype overeenkomstig figma */
 
@@ -61,7 +63,7 @@ body {
     grid-column-start: 2;
     width: 91px;
     height: 28px;
-    margin-top: 3%;
+    margin-top: 2em;
     margin-right: 20px;
     cursor: pointer;
 }
@@ -92,53 +94,70 @@ nav ul li a {
     color: black;
    }
 
+/* CSS voor de titel en ondertitel van de pagina */
 hgroup {
     display: grid;
-    grid-template-rows: 3fr 1fr 2fr 1fr 1fr;
-    grid-template-columns: 2fr .125fr;
-    grid-row: 1/2;
+    grid-template-rows: 2fr .5fr 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1.2fr;
+    grid-column: 1/2;
     margin-left: 10em;
 }
 
 .text-1 {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
     grid-row: 2/3;
+    font-size: 13px;
 }
 
 .header-1 {
+    font-family: "Merriweather", serif;
     grid-row: 3/4;
-    font-size: 50px;  
+    font-size: 55px;  
+    margin-bottom: .125em;
 }
 
 .text-2 {
+    font-family: "Inter", sans-serif;
     grid-row: 4/5;
+    max-width: 50em;
+    font-size: 20px;
 }
 
 .text-3 {
+    font-family: "Inter", sans-serif;
     grid-row: 5/6;
 }
 
-
-.img-cola {
-    display: flex;
-    align-items: end;
-}
-
-
+/* CSS voor de tekst van het artikel */
 .body-text {
     display: grid;
-    grid-template-columns: .125fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     margin-top: 10em;
     margin-left: 10em;
-    
 }
 
-.img-cola {
-    grid-column: 1/2;
-}
 
 .paragraph-1 {
     grid-column: 1/2;
-    margin-left: 10em;
+    font-family: "Source Serif 4", serif;
+    font-size: 18px;
+}
+
+.img-cola{
+    grid-column: 3/4;
+    margin-right: 5em;
+}
+
+.buttons{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    cursor: pointer;
 }
 
 .header-2 {
