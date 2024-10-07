@@ -9,7 +9,7 @@ body {
 }
 /* Achtergrond kleur voor de body: wit */
 
-.first-nav{ 
+.first-nav { 
     background-color: black;
 }
 /* bovenste navigatiebar met als achtergrondkleur zwart */
@@ -20,21 +20,21 @@ body {
 }
 /* Met flexbox komen de li naast elkaar en ze worden door justify-content gecentreerd */
 
-.first-nav a{
+.first-nav a {
     color:#fff; 
     line-height: 3.5em;   
 }
 /* De kleur van de text in de navbar */
 
 
-.logo-above{
+.logo-above {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
 /* Logo krijgt een width van 10%. Met de cursor pointer verandert de pointer in een 'hand' als met de muis over de logo wordt gegaan */
 
-.child-logo-above{
+.child-logo-above {
     grid-row-start: 2;
     grid-row-end: 3;
     height: 3em;
@@ -43,10 +43,9 @@ body {
     cursor: pointer;
 
 }
-/* logo beweegt mee met verkleinen  */
 /* child (logo  zelf) wordt nu in een colom geplaatst samen met de ondertitel */
 
-.undertitle{
+.undertitle {
     grid-row-start: 3;
     grid-row-end: 4;
     font-family: 'inter' sans-serif;
@@ -57,7 +56,7 @@ body {
 /* to do: aanpassen van de lettertype overeenkomstig figma */
 
 
-.donate{
+.donate {
     display: grid;
     grid-column-start: 2;
     width: 91px;
@@ -67,12 +66,12 @@ body {
     cursor: pointer;
 }
  
-.image-button{
+.image-button {
     width: 91px;
     height: 26px;
 }
 
-nav{
+nav {
     text-align: center;
     font-family: "Merriweather", system-ui;
     font-size: 13px;
@@ -80,7 +79,7 @@ nav{
     color: black;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 10px;
@@ -88,13 +87,12 @@ nav ul li{
 }
 /*Met list: style none krijg je geen puntjes op je lijst*/
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
    }
-/* vraag: kan deze ook in een ander selector worden geplaatst? */
 
-hgroup{
+hgroup {
     display: grid;
     grid-template-rows: 3fr 1fr 2fr 1fr 1fr;
     grid-template-columns: 2fr .125fr;
@@ -102,27 +100,53 @@ hgroup{
     margin-left: 10em;
 }
 
-.text-1{
+.text-1 {
     grid-row: 2/3;
-  
 }
 
-.header-1{
+.header-1 {
     grid-row: 3/4;
-    font-size: 50px;
+    font-size: 50px;  
 }
 
-.text-2{
+.text-2 {
     grid-row: 4/5;
 }
 
-.text-3{
+.text-3 {
     grid-row: 5/6;
 }
 
-.img-cola{
+
+.img-cola {
     display: flex;
     align-items: end;
+}
+
+
+.body-text {
+    display: grid;
+    grid-template-columns: .125fr 1fr;
+    margin-top: 10em;
+    margin-left: 10em;
+    
+}
+
+.img-cola {
+    grid-column: 1/2;
+}
+
+.paragraph-1 {
+    grid-column: 1/2;
+    margin-left: 10em;
+}
+
+.header-2 {
+    grid-column: 1/2;
+}
+
+q {
+    grid-column: 1/2;
 }
 
 /* article{
