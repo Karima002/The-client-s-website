@@ -40,6 +40,16 @@ https://github.com/Karima002/The-client-s-website/blob/2842b4290225f4ecd7479d80c
   https://github.com/Karima002/The-client-s-website/blob/2842b4290225f4ecd7479d80c203fd04e242dc2a/index.html#L145-L146
 
 
+### FOOTER
+In de footer staat de laatste navigatiebar. Deze is gemaakt door middel van een unordered list.
+https://github.com/Karima002/The-client-s-website/blob/2842b4290225f4ecd7479d80c203fd04e242dc2a/index.html#L187-L199
+
+## BRONNEN
+Inspiratie: https://www.newyorker.com/
+Visuele Hiërarchie en witruimte: https://github.com/fdnd-task/your-tribe-squad-page/blob/main/docs/visuele-hierarchie.md
+CSS reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+What is SVG and how to use it: https://developer.mozilla.org/en-US/docs/Web/SVG
+
 
 ## Licentie
 
