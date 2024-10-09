@@ -14,7 +14,30 @@ Wij hebben de vrijheid gekregen om op dit design voort te bouwen en gedeeltes aa
 
 
 ## Kenmerken
-De website is gebouwd met [HTML](#html) en [CSS](#CSS).
+De website is gebouwd met [HTML](#IDEX.html) en [CSS](#style.css).
+
+### HTML
+Hieronder staat de basis structuur uitgelegd met de setting in de [HEAD](#HEAD) en opmaak van de [BODY](#BODY):
+
+#### HEAD
+In de head wordt de CSS file ingeladen. Ook worden hier de gebruikte Google fonts ingeladen (Intel, Merrieweather en Source serif)
+https://github.com/Karima002/The-client-s-website/blob/2842b4290225f4ecd7479d80c203fd04e242dc2a/index.html#L10-L16
+
+#### BODY
+  De structuur van de body is [HEADER](#HEADER), [MAIN](#MAIN) en [FOOTER](#FOOTER): 
+
+  ##### Header
+  In de header staat de eerste zwarte navigatiebar, de logo en bijhorende ondertitel, de doneerknop en de tweede navigatiebar.
+
+  ##### Main
+  De main begint met een section voor de titel van de artikelpagina, bijhorende beschrijving en andere informatie over het artikel.
+  https://github.com/Karima002/The-client-s-website/blob/2842b4290225f4ecd7479d80c203fd04e242dc2a/index.html#L57
+
+  Vevolgens is er een section voor de tekst op de artikelpagina. Deze secton omvat ook de image en buttons die horen bij de pagina.
+  https://github.com/Karima002/The-client-s-website/blob/2842b4290225f4ecd7479d80c203fd04e242dc2a/index.html#L71
+
+  Tot slot een section voor het kader om te doneren en het kader met informatie van de redacteuren.
+  https://github.com/Karima002/The-client-s-website/blob/2842b4290225f4ecd7479d80c203fd04e242dc2a/index.html#L145-L146
 
 
 
