@@ -224,7 +224,12 @@ h2 {
 
 /* CSS voor het kader om te doneren aan Redpers, hoofd- en eindredacteuren */
 
-.information-article{
+.steun-redpers{ /*voor de h3 steun redpers*/
+    color: #E85340;
+    margin-bottom: 1em;;
+}
+
+.information-article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -235,6 +240,8 @@ h2 {
     grid-row: 1/2;
     border: solid #AF726B;
     background: #F9D4CF;
+    list-style: none;
+    margin-bottom: 3em;
 }
 
 .paragraph-2{
@@ -242,6 +249,40 @@ h2 {
     font-family: "Inter", sans-serif;
     padding: 2em;
     font-size: 14px;
+}
+
+.donate-bedrag {
+    appearance: none; /*standaard layout gaat weg van de button*/
+    border: none;
+    background: #E1E1E1;
+    border-radius: .125em;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.write-article{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 1em;
+}
+
+.eindredacteur {
+    margin-top: 3em;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: solid #7B7B7A;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.photo-madelief{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.eindredacteur-text {
+    font-family: "Inter", sans-serif;
+
 }
 
 /* CSS voor de footer */
