@@ -1,17 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-
 
 body {
     background-color: #fff;
 }
 /* Achtergrond kleur voor de body: wit */
 
+
 .first-nav { 
+    position: sticky;
     background-color: black;
 }
 /* bovenste navigatiebar met als achtergrondkleur zwart */
@@ -24,10 +23,11 @@ body {
 
 .first-nav a {
     color:#fff; 
-    line-height: 3.5em;   
+    line-height: 3.5em; 
+    font-size: 12px;
+  
 }
 /* De kleur van de text in de navbar */
-
 
 .logo-above {
     display: grid;
@@ -55,7 +55,6 @@ body {
     font-size: 12px;
     margin-left: 1.5em;
 }
-/* to do: aanpassen van de lettertype overeenkomstig figma */
 
 
 .donate {
@@ -85,35 +84,39 @@ nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 10px;
-    text-decoration: none;
 }
 /*Met list: style none krijg je geen puntjes op je lijst*/
 
-nav ul li a {
+nav ul li a { /*de <a> in de list krijgen een zwarte kleur*/
     text-decoration: none;
     color: black;
    }
 
 /* CSS voor de titel en ondertitel van de pagina */
+main {
+    padding: 0 2em 0 9em; /*met de klok mee: boven een padding van 0em, links een padding van 2em, onderaan een padding van 0em en rechts een padding van 9em */
+    display: grid;
+    gap: 9em;
+}
+
 hgroup {
     display: grid;
     grid-template-rows: 2fr .5fr 2fr 1fr 1fr;
-    grid-template-columns: 2fr 1.2fr;
+    grid-template-columns: 2fr 1fr;
     grid-column: 1/2;
-    margin-left: 10em;
 }
 
 .text-1 {
     font-family: "Inter", sans-serif;
     text-transform: uppercase;
     grid-row: 2/3;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .header-1 {
     font-family: "Merriweather", serif;
     grid-row: 3/4;
-    font-size: 55px;  
+    font-size: 45px;  
     margin-bottom: .125em;
 }
 
@@ -121,62 +124,186 @@ hgroup {
     font-family: "Inter", sans-serif;
     grid-row: 4/5;
     max-width: 50em;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .text-3 {
     font-family: "Inter", sans-serif;
     grid-row: 5/6;
+    font-size: 12px;
 }
 
 /* CSS voor de tekst van het artikel */
 .body-text {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    margin-top: 10em;
-    margin-left: 10em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: /*grid template areas voor de tekst, img en buttons */
+    "div img"
+    "div ul";
+    row-gap: 1em;
+    column-gap: 4em;
 }
 
+.body-text div{
+    grid-area: div;
+}
+
+.body-text div h3{
+    margin: 1.5em 0em .5em 0em;
+}
 
 .paragraph-1 {
     grid-column: 1/2;
     font-family: "Source Serif 4", serif;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.7em;
 }
 
-.img-cola{
-    grid-column: 3/4;
-    margin-right: 5em;
+.quote { /*De quoteshaakjes krijgen zitten in een class en krijgen een margin van 2em aan de bovenkant*/
+    margin-top: 2em;
 }
 
-.buttons{
-    grid-column: 3/4;
-    grid-row: 2/3;
+h2 {
+    font-family: "Source Serif 4", serif;
+    font-size: 38px;
+    margin-bottom: 1.5em;
+    max-width: 20em;
+    letter-spacing: -1px;
+}
+
+/* CSS voor de image van frisdrank + buttons */
+.img-cola {
+    grid-area: img;
+    width: 100%;
+    display: block; /*geeft geen witruimte onder de img*/
+}
+
+.buttons {
+	list-style-type:none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1em;
+    gap: .5em;
+    grid-area: ul;
+}
+
+.buttons li:nth-of-type(1) { /*Tegen de first child wordt gezegd dat de rest van de buttons opzij moeten schuiven naar rechts.*/
+    margin-right:auto;
+}
+
+.artikel-beluisteren {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: .5em;
+    appearance: none;
+    border: none;
+    border-radius: .125em;
+    background-color: #F9D4CF;
+    color: #AF726B;
     cursor: pointer;
 }
 
-.header-2 {
-    grid-column: 1/2;
+.control{
+    appearance: none; /*standaard layout gaat weg van de button*/
+    border: none;
+    background: #E1E1E1;
+    border-radius: .125em;
+    padding: .5em;
+    cursor: pointer;
 }
 
-q {
-    grid-column: 1/2;
+.control img{
+    width: 2em;
+    height: 2em;
 }
 
-/* article{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.image-buttons {
+    width: 100%;
+    height: 100%;
 }
 
-.text-image{
+/* CSS voor het kader om te doneren aan Redpers, hoofd- en eindredacteuren */
+
+.information-article{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 3fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
-} */
+.doneren-buttons {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: solid #AF726B;
+    background: #F9D4CF;
+}
+
+.paragraph-2{
+    color: #E85340;
+    font-family: "Inter", sans-serif;
+    padding: 2em;
+    font-size: 14px;
+}
+
+/* CSS voor de footer */
+
+footer ul{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr;
+    list-style: none;
+}
+
+footer ul li a{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    line-height: 1.5em;
+}
+
+.logo-redpers-footer{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 3em;
+    width: 10em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.rubrieken{
+    margin-left: 5rem;
+}
+
+.rubrics{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 5rem;
+}
+
+.navigation{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.service-2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.more-redpers{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+
+.copyright{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: 6em;
+}
+
