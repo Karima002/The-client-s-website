@@ -181,13 +181,13 @@ h2 {
 
 .buttons {
 	list-style-type:none;
-    display: flex;
-    gap: .5em;
+    display: flex; /*de buttons komen hierdoor naast elkaar te staan*/
+    gap: .5em; /*tussen de laatste buttons komt een gat van 0,5em*/
     grid-area: ul;
 }
 
 .buttons li:nth-of-type(1) { /*Tegen de first child wordt gezegd dat de rest van de buttons opzij moeten schuiven naar rechts.*/
-    margin-right:auto;
+    margin-right:auto; 
 }
 
 .artikel-beluisteren {
