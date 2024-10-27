@@ -25,7 +25,6 @@ body {
     color:#fff; 
     line-height: 3.5em; 
     font-size: 12px;
-  
 }
 /* De kleur van de text in de navbar */
 
@@ -224,10 +223,10 @@ h2 {
 
 /* CSS voor het kader om te doneren aan Redpers, hoofd- en eindredacteuren */
 
-.steun-redpers{ /*voor de h3 steun redpers*/
+/* .steun-redpers{ --> is verwijderd door de opdrachtgever
     color: #E85340;
     margin-bottom: 1em;;
-}
+} */
 
 .information-article {
     display: grid;
@@ -282,7 +281,6 @@ h2 {
 }
 .eindredacteur-text {
     font-family: "Inter", sans-serif;
-
 }
 
 /* CSS voor de footer */
